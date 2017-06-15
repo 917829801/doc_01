@@ -1,0 +1,98 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}{% endblock %}</title>
+		<meta name="description" content="iDea a Bootstrap-based, Responsive HTML5 Template">
+		<meta name="author" content="htmlcoder.me">
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<!-- Web Fonts -->
+		<!-- Bootstrap core CSS -->
+		<link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<!-- Font Awesome CSS -->
+		<link href="/static/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<!-- Fontello CSS -->
+		<link href="/static/fonts/fontello/css/fontello.css" rel="stylesheet">
+
+		<!-- Plugins -->
+		<link href="/static/plugins/rs-plugin/css/settings.css" media="screen" rel="stylesheet">
+		<link href="/static/plugins/rs-plugin/css/extralayers.css" media="screen" rel="stylesheet">
+		<link href="/static/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="/static/css/animations.css" rel="stylesheet">
+		<link href="/static/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+
+		<!-- iDea core CSS file -->
+		<link href="/static/css/style.css" rel="stylesheet">
+
+		<!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
+		<link href="/static/css/skins/red.css" rel="stylesheet">
+
+		<!-- Custom css --> 
+		<link href="/static/css/custom.css" rel="stylesheet">
+	</head>
+
+	<!-- body classes: 
+			"boxed": boxed layout mode e.g. <body class="boxed">
+			"pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1"> 
+	-->
+	<body class="front">
+		<!-- scrollToTop -->
+		<!-- ================ -->
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+		{% block header %}
+		   	{% include 'nav.html'   %}
+		{% endblock %} 
+                {% block content %}BODY IS HERE{% endblock %}  
+                {% block footer %}
+      			{% include 'footer.html' %}
+    		{% endblock %} 
+
+		<!-- JavaScript files placed at the end of the document so the pages load faster
+		================================================== -->
+		<!-- Jquery and Bootstap core js files -->
+		<script type="text/javascript" src="/static/plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Modernizr javascript -->
+		<script type="text/javascript" src="/static/plugins/modernizr.js"></script>
+
+		<!-- jQuery REVOLUTION Slider  -->
+		<script type="text/javascript" src="/static/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="/static/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- Isotope javascript -->
+		<script type="text/javascript" src="/static/plugins/isotope/isotope.pkgd.min.js"></script>
+
+		<!-- Owl carousel javascript -->
+		<script type="text/javascript" src="/static/plugins/owl-carousel/owl.carousel.js"></script>
+
+		<!-- Magnific Popup javascript -->
+		<script type="text/javascript" src="/static/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+		<!-- Appear javascript -->
+		<script type="text/javascript" src="/static/plugins/jquery.appear.js"></script>
+
+		<!-- Count To javascript -->
+		<script type="text/javascript" src="/static/plugins/jquery.countTo.js"></script>
+
+		<!-- Parallax javascript -->
+		<script src="/static/plugins/jquery.parallax-1.1.3.js"></script>
+
+		<!-- Contact form -->
+		<script src="/static/plugins/jquery.validate.js"></script>
+
+		<!-- Initialization of Plugins -->
+		<script type="text/javascript" src="/static/js/template.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="/static/js/custom.js"></script>
+
+	</body>
+</html>
